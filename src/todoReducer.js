@@ -3,9 +3,9 @@
 export const todoReducer = (initialState = [], action) => {
 
     switch (action.type) {
-        case 'ABC':
+        case '[TODO] Add Todo':
             
-            return initialState;
+            return [...initialState, action.payload];
     
         default:
             return initialState;
